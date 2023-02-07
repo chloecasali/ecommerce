@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,48 +22,25 @@
         </style>
     </head>
 
-
-
-    <body class="antialiased">
-
-    <form class="space-y-6" action="/account/register" method="POST">
-        @csrf
-        <div class="bg-white px-4 py-5 shadow sm:rounded-lg sm:p-6">
-        <div class="bg-white px-4 py-5 shadow sm:rounded-lg sm:p-6">
-            <div class="md:grid md:grid-cols-3 md:gap-6">
-                <div class="md:col-span-1">
-                    <h3 class="text-lg font-medium leading-6 text-gray-900">Personal Information</h3>
-                </div>
-                <div class="mt-5 md:col-span-2 md:mt-0">
-                    <div class="grid grid-cols-6 gap-6">
-                        <div class="col-span-6 sm:col-span-3">
-                            <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
-                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" style="text-transform: capitalize" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                        </div>
-
-                        <div class="col-span-6 sm:col-span-3">
-                            <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
-                            <input type="text" name="last-name" id="last-name" autocomplete="family-name" style="text-transform: capitalize" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                        </div>
-
-                        <div class="col-span-6 sm:col-span-4">
-                            <label for="email-address" class="block text-sm font-medium text-gray-700">Email address</label>
-                            <input type="email" name="email" id="email" autocomplete="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                        </div>
-                    </div>
+    <div class="rounded-md bg-green-50 p-4">
+        <div class="flex">
+            <div class="flex-shrink-0">
+                <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3">
+                <p class="text-sm font-medium text-green-800">Thank you ! You are successfully registered.</p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="flex justify-end">
-            <button type="button" class="rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Cancel</button>
-            <button type="submit" class="ml-3 inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Save</button>
-        </div>
-    </form>
-
-
-
-
+    <br>
+    <br>
 
 
     <div class="px-4 sm:px-6 lg:px-8">
@@ -98,5 +75,22 @@
 
 
 
-    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
