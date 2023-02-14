@@ -13,12 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Route::get('/login', function () {
     return view('login');
+});
+
+Route::get('/register', function () {
+    return view('register');
 });
 
 Route::get('/account', function () {
@@ -27,7 +31,7 @@ Route::get('/account', function () {
 
 
 
-Route::post('/account/register', function () {
+Route::post('/', function () {
     $user = new \App\Models\User();
     $user->name = request()->get('first-name') . ' ' . request()->get('last-name');
     $user->email = request()->get('email');

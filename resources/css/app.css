@@ -39,7 +39,7 @@ body {
 .main-wrapper h2 {
     font-size: 20px;
     font-weight: 600;
-    padding: 25px 10px 0 0;
+    padding: 15px 10px 0 0;
 }
 
 .login-form {
@@ -47,7 +47,7 @@ body {
     height: 400px;
     background-color: #F5F2EA;
     border-radius: 10px;
-
+    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.1));
 }
 
 .set-inputs {
@@ -74,7 +74,7 @@ input {
 .connexion-btn {
     width: 100%;
     height: 45px;
-    margin-top: 20px;
+    margin-top: 50px;
     font-family: 'Quicksand', 'SansSerif';
     font-weight: 600;
     color: #FAF9F6;
@@ -122,4 +122,26 @@ input {
 
 .create-link a:focus {
     color: #4C061D;
+}
+
+.name-flex {
+    display: inline-flex;
+    width: 100%;
+    gap: 50px;
+}
+.name-block {
+    display: block;
+    width: 50%;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.register-form {
+    width: 100%;
+    height: 600px;
+    background-color: #F5F2EA;
+    border-radius: 10px;
+    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.1));
 }

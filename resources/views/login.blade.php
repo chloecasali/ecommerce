@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     </head>
 
-    <body class="main">
+    <body>
 
         <main class="main-wrapper">
 
@@ -35,7 +35,7 @@
                 </form>
             </div>
 
-            <p class="create-link">Ou <a href="#">Créer un compte</a></p>
+            <p class="create-link">Ou <a href="/register">Créer un compte</a></p>
 
         </main>
 

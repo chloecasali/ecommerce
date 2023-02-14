@@ -26,7 +26,7 @@
 
     <body class="antialiased">
 
-    <form class="space-y-6" action="/account/register" method="POST">
+    <form class="space-y-6" action="/account" method="POST">
         @csrf
         <div class="bg-white px-4 py-5 shadow sm:rounded-lg sm:p-6">
         <div class="bg-white px-4 py-5 shadow sm:rounded-lg sm:p-6">
