@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAF9F6;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+}
+
+.main-wrapper h1, h2 {
+    color: #896B60;
+    font-family: 'Quicksand', 'SansSerif';
+}
+
+.div-title {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-wrapper h1 {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-wrapper h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 25px 10px 0 0;
+}
+
+.login-form {
+    width: 100%;
+    height: 400px;
+    background-color: #F5F2EA;
+    border-radius: 10px;
+
+}
+
+.set-inputs {
+    padding: 10px;
+}
+
+input {
+    outline: none;
+    border: 2px solid #E9E9E9;
+    border-radius: 10px;
+    width: 100%;
+    height: 35px;
+    padding-left: 6px;
+    font-family: 'Nunito Sans', 'SansSerif';
+    font-size: 16px;
+    background-color: #FAF9F6;
+    transition: border 300ms;
+}
+
+.focused:focus {
+    border: 2px solid #4C061D;
+}
+
+.connexion-btn {
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    font-family: 'Quicksand', 'SansSerif';
+    font-weight: 600;
+    color: #FAF9F6;
+    background-color: #896B60;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 800ms;
+}
+
+.connexion-btn:hover {
+    background-color: #4C061D;
+}
+
+.connexion-btn:focus {
+    background-color: #4C061D;
+}
+
+.forgotten-link {
+    margin-top: 15px;
+    float: right;
+    color: black;
+    font-family: 'Quicksand', 'SansSerif';
+    font-weight: 400;
+    color: #896B60;
+}
+
+.create-link {
+    font-family: 'Quicksand', 'SansSerif';
+    color: #896B60;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+
+.create-link a {
+    color: #896B60;
+    transition: 300ms;
+}
+
+.create-link a:hover {
+    color: #4C061D;
+}
+
+.create-link a:focus {
+    color: #4C061D;
+}

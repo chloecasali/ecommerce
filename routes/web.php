@@ -13,9 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/account/register', function () {
+Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/account', function () {
+    return view('succeed');
+});
+
 
 
 Route::post('/account/register', function () {
@@ -27,6 +36,3 @@ Route::post('/account/register', function () {
     return \Illuminate\Support\Facades\Redirect::to('/account');
 });
 
-Route::get('/account', function () {
-    return view('succeed');
-});
