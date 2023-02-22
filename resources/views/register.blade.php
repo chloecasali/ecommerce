@@ -22,7 +22,7 @@
     </div>
 
     <div class="register-form">
-        <form action="/account" method="post">
+        <form action="/" method="post">
             @csrf
             <div class="set-inputs">
                 <div class="name-flex">

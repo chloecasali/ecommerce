@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('/login', function () {
     return view('login');
@@ -25,18 +25,18 @@ Route::get('/register', function () {
     return view('register');
 });
 
-Route::get('/account', function () {
-    return view('succeed');
-});
+//Route::get('/account', function () {
+//    return view('succeed');
+//});
 
 
 
 Route::post('/', function () {
     $user = new \App\Models\User();
-    $user->name = request()->get('first-name') . ' ' . request()->get('last-name');
+    $user->name = request()->get('firstname') . ' ' . request()->get('lastname');
     $user->email = request()->get('email');
     $user->password = \Hash::make('password');
     $user->save();
-    return \Illuminate\Support\Facades\Redirect::to('/account');
+    return \Illuminate\Support\Facades\Redirect::to('/');
 });
 

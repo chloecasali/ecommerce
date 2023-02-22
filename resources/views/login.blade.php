@@ -22,7 +22,7 @@
             </div>
 
             <div class="login-form">
-                <form action="/account" method="post">
+                <form action="/" method="post">
                     @csrf
                     <div class="set-inputs">
                         <label for="email"><h2>Email</h2></label>
